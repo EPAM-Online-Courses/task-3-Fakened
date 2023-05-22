@@ -7,7 +7,7 @@ public class Main {
         
 	    Villager Kashya = new Villager("Kashya", 30);
         ExtraordinaryVillager Akara = new ExtraordinaryVillager("Akara", 40, ExtraordinaryVillager.Skill.SHELTER);
-        Villager Gheda = new Villager("Gheda", 50);
+        Villager Gheda = new Villager("Gheed", 50);
         ExtraordinaryVillager DeckardCain = new ExtraordinaryVillager("Deckard Cain", 85, ExtraordinaryVillager.Skill.IDENTIFY);
         Villager Warriv = new Villager("Warriv", 35);
         Villager Flawia = new Villager("Flawia", 25);
@@ -67,13 +67,13 @@ public class Main {
         Random random = new Random();
         int monster = random.nextInt(2);
         if (monster == 0) {
-            if (Monsters.andriel.getHealth() <= 0) {
+            if (Monsters.andariel.getHealth() <= 0) {
                 return Monsters.blacksmith;
             }
-            return Monsters.andriel;
+            return Monsters.andariel;
         } else {
             if (Monsters.blacksmith.getHealth() <= 0) {
-                return Monsters.andriel;
+                return Monsters.andariel;
             }
             return Monsters.blacksmith;
         }
